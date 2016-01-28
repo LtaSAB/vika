@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+.title {
+    margin: 200px auto;
+    width: 70%;
+    height: 700px;
+    position: relative;
+    text-align: center;
+}
+.button {
+    display: inline-block;
+    margin: 200px auto;
+    padding: 10px 20px;
+    border: 1px solid cyan;
+    border-radius: 25px;
+
+}
+a.button  {
+    color: inherit;
+    text-decoration: none;
+}
+a.button:hover {
+    color: white;
+    background-color: orange;
+}
+a.button:hover~.dog{
+    opacity: 1;
+    transition: all 0.8s linear;
+}
+a.button:hover~.vika{
+    opacity: 1;
+    transition: opacity 1s 0.5s linear,  transform 2s 0.5s;
+    transform: translateY(-50px);
+}
+img.vika {
+    width: 150px;
+    position: absolute;
+    height: auto;
+    display: block;
+    border-radius: 20%;
+    left: 50%;
+    margin-left: -75px;
+    top: 60px;
+    opacity: 0;
+}
+.dog {
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    top: 270px;
+    opacity: 0;
+}
